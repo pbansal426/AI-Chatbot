@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local AI Chat</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #2C2F33; color: white; padding: 20px; }
+        .chat-container { width: 100%; max-width: 600px; margin: auto; }
+        .message { padding: 10px; border-radius: 5px; margin-bottom: 10px; }
+        .user { background-color: #5865F2; text-align: right; }
+        .ai { background-color: #444; }
+        pre { background: #1e1e1e; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        code { color: #9CDCFE; }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Type a message..." style="width: 100%; padding: 10px;">
+        <button onclick="sendMessage()" style="width: 100%; padding: 10px; margin-top: 10px;">Send</button>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>
